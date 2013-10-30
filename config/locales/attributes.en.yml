@@ -1,0 +1,31 @@
+en:
+  activerecord:
+    attributes:
+      timestamps: &timestamps
+        created_at: 'Created at'
+        updated_at: 'Updated at'
+      user:
+        email: 'Email'
+        type: 'Type'
+        firstname: 'Firstname'
+        lastname: 'Lastname'
+        presence: 'Presence'
+        number_street: 'Number of street'
+        street: 'Street'
+        town: 'Town'
+        apartment_id: 'Apartment ID'
+        entry_date: 'Entry date'
+        release_date: 'Release date'
+      apartment:
+        title: 'Title'
+        description: 'Description'
+        town: 'Town'
+        street: 'Street'
+        number_street: 'Number of street'
+        surface: 'Surface'
+        price: 'Price'
+      photo:
+        photo_path: 'Path photo'
+        title: 'Title'
+        description: 'Description'
+        apartment_id: 'Apartment ID'

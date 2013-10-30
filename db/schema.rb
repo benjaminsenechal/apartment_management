@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131029104512) do
+ActiveRecord::Schema.define(version: 20131030115356) do
 
   create_table "apartments", force: true do |t|
     t.string   "title"
@@ -36,6 +36,8 @@ ActiveRecord::Schema.define(version: 20131029104512) do
 
   add_index "photos", ["apartment_id"], name: "index_photos_on_apartment_id", using: :btree
 
+ActiveRecord::Schema.define(version: 20131028111253) do
+
   create_table "users", force: true do |t|
     t.string   "email",                  default: "", null: false
     t.string   "encrypted_password",     default: "", null: false
@@ -52,6 +54,16 @@ ActiveRecord::Schema.define(version: 20131029104512) do
     t.string   "type"
     t.string   "lastname"
     t.string   "firstname"
+    t.boolean  "presence"
+    t.integer  "number_street"
+    t.string   "street"
+    t.string   "town"
+    t.datetime "entry_date"
+    t.datetime "release_date"
+    t.integer  "apartment_id"
+  end
+
+  add_index "users", ["apartment_id"], name: "index_users_on_apartment_id", using: :btree
     t.string   "town"
   end
 
