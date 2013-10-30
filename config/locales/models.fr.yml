@@ -1,18 +1,18 @@
 fr:
   activerecord:
     models:
+      apartment:
+        one: 'Appartement'
+        other: 'Appartements'
       user:
         one: 'Utilisateur'
         other: 'Utilisateurs'
+      photo:
+        one: 'Photo'
+        other: 'Photos'
       users/owner:
         one: 'Propriétaire'
         other: 'Propriétaires'
       users/tenant:
         one: 'Locataire'
         other: 'Locataires'
-      apartment:
-        one: 'Appartement'
-        other: 'Appartements'
-      photo:
-        one: 'Photo'
-        other: 'Photos'

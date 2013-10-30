@@ -1,6 +1,12 @@
 en:
   activerecord:
     models:
+      apartment:
+        one: 'Apartment'
+        other: 'Apartments'
+      photo:
+        one: 'Photo'
+        other: 'Photos'
       user:
         one: 'User'
         other: 'Users'
@@ -10,9 +16,3 @@ en:
       users/tenant:
         one: 'Tenant'
         other: 'Tenants'
-      apartment:
-        one: 'Apartment'
-        other: 'Apartments'
-      photo:
-        one: 'Photo'
-        other: 'Photos'

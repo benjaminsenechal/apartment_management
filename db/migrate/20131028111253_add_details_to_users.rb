@@ -8,6 +8,5 @@ class AddDetailsToUsers < ActiveRecord::Migration
     add_column :users, :town, :string
     add_column :users, :entry_date, :datetime
     add_column :users, :release_date, :datetime
-    add_column :users, :town, :string
   end
 end
