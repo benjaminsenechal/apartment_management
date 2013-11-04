@@ -1,0 +1,37 @@
+fr:
+  activerecord:
+    attributes:
+      timestamps: &timestamps
+        created_at: 'Créé le'
+        updated_at: 'Mis à jour le'
+      apartment:
+        <<: *timestamps
+        description: 'Description'
+        number_street: 'Numéro de rue'
+        price: 'Prix'
+        street: 'Rue'
+        surface: 'Surface'
+        title: 'Titre'
+        town: 'Ville'
+      photo:
+        <<: *timestamps
+        apartment: 'Appartement'
+        apartment_id: 'ID Appartement'
+        description: 'Description'
+        photo_path: 'Photo'
+        title: 'Titre'
+      user:
+        <<: *timestamps
+        apartment_id: 'ID Appartement'
+        email: 'Email'
+        firstname: 'Prénom'
+        lastname: 'Nom'
+        number_street: 'Numéro de rue'
+        presence: 'Présence'
+        street: 'Rue'
+        town: 'Ville'
+        type: 'Type'
+      users/tenant:
+        apartment: 'Appartement'
+        entry_date: "Date d'entrée"
+        release_date: "Date de sortie"

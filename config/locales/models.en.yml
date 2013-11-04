@@ -1,0 +1,18 @@
+en:
+  activerecord:
+    models:
+      apartment:
+        one: 'Apartment'
+        other: 'Apartments'
+      photo:
+        one: 'Photo'
+        other: 'Photos'
+      user:
+        one: 'User'
+        other: 'Users'
+      users/owner:
+        one: 'Owner'
+        other: 'Owners'
+      users/tenant:
+        one: 'Tenant'
+        other: 'Tenants'
