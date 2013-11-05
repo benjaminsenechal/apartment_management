@@ -13,6 +13,13 @@ fr:
         surface: 'Surface'
         title: 'Titre'
         town: 'Ville'
+      document:
+        <<: *timestamps
+        content: 'Contenu'
+        description: 'Description'
+        important: 'Important'
+        title: 'Titre'
+        user: 'Utilisateur'
       photo:
         <<: *timestamps
         apartment: 'Appartement'

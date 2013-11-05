@@ -5,10 +5,10 @@ RailsAdmin.config do |config|
                    :encrypted_password,
                    :last_sign_in_at,
                    :last_sign_in_ip,
-                   :reset_password_token,
-                   :reset_password_sent_at,
                    :remember_created_at,
+                   :reset_password_sent_at,
+                   :reset_password_token,
                    :sign_in_count,
                    :type
-  end
+    end
 end

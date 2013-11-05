@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :documents
+
   devise :database_authenticatable,
          :registerable,
          :recoverable,
