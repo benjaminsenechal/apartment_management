@@ -22,4 +22,8 @@ class User < ActiveRecord::Base
 
   validates :town,
             presence: true
+
+  def to_s
+    "#{lastname} #{firstname}"
+  end
 end

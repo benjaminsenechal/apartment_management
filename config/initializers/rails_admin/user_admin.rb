@@ -14,6 +14,16 @@ RailsAdmin.config do |config|
     end
   end
 
+  config.model Document do
+    list do
+      field :title
+      field :user
+      field :content
+      field :description
+      field :created_at
+    end
+  end
+
   def custom_label_method
     "#{firstname} #{lastname}"
   end

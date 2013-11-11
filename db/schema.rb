@@ -29,7 +29,6 @@ ActiveRecord::Schema.define(version: 20131104212436) do
     t.string   "title"
     t.string   "content"
     t.text     "description"
-    t.datetime "date"
     t.boolean  "important"
     t.datetime "created_at"
     t.datetime "updated_at"

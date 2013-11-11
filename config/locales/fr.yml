@@ -201,7 +201,7 @@ fr:
       record_invalid: "La validation a échoué : %{errors}"
       url: "n'est pas une url valide"
       email: "n'est pas une adresse email valide"
-
+      extension_white_list_error: "est invalide"
     template: &errors_template
       header:
         one:   "Impossible d'enregistrer ce(tte) %{model} : 1 erreur"

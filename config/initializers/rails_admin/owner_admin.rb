@@ -5,6 +5,7 @@ RailsAdmin.config do |config|
                    :current_sign_in_ip,
                    :encrypted_password,
                    :entry_date,
+                   :id,
                    :last_sign_in_at,
                    :last_sign_in_ip,
                    :presence,
@@ -13,7 +14,6 @@ RailsAdmin.config do |config|
                    :reset_password_sent_at,
                    :reset_password_token,
                    :sign_in_count,
-                   :type,
-                   :id
+                   :type
   end
 end
