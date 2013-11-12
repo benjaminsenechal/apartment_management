@@ -9,5 +9,22 @@ RailsAdmin.config do |config|
                    :reset_password_sent_at,
                    :reset_password_token,
                    :sign_in_count
+    object_label_method do
+      :custom_label_method
+    end
+  end
+
+  config.model Document do
+    list do
+      field :title
+      field :user
+      field :content
+      field :description
+      field :created_at
+    end
+  end
+
+  def custom_label_method
+    "#{firstname} #{lastname}"
   end
 end

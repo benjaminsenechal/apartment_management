@@ -1,4 +1,6 @@
 class User < ActiveRecord::Base
+  has_many :documents
+
   devise :database_authenticatable,
          :registerable,
          :recoverable,
@@ -20,4 +22,8 @@ class User < ActiveRecord::Base
 
   validates :town,
             presence: true
+
+  def to_s
+    "#{lastname} #{firstname}"
+  end
 end

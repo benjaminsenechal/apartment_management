@@ -4,12 +4,15 @@ fr:
       apartment:
         one: 'Appartement'
         other: 'Appartements'
-      user:
-        one: 'Utilisateur'
-        other: 'Utilisateurs'
+      document:
+        one: 'Document'
+        other: 'Documents'
       photo:
         one: 'Photo'
         other: 'Photos'
+      user:
+        one: 'Utilisateur'
+        other: 'Utilisateurs'
       users/owner:
         one: 'Propriétaire'
         other: 'Propriétaires'

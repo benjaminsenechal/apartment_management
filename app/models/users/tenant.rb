@@ -7,8 +7,5 @@ module Users
 
     validates :entry_date,
               presence: true
-
-    validates :release_date,
-              presence: true
   end
 end

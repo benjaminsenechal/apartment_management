@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20131030115356) do
+ActiveRecord::Schema.define(version: 20131104212436) do
 
   create_table "apartments", force: true do |t|
     t.string   "title"
@@ -24,6 +24,18 @@ ActiveRecord::Schema.define(version: 20131030115356) do
     t.datetime "created_at"
     t.datetime "updated_at"
   end
+
+  create_table "documents", force: true do |t|
+    t.string   "title"
+    t.string   "content"
+    t.text     "description"
+    t.boolean  "important"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "user_id"
+  end
+
+  add_index "documents", ["user_id"], name: "index_documents_on_user_id", using: :btree
 
   create_table "photos", force: true do |t|
     t.string   "photo_path"
