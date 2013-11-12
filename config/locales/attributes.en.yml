@@ -5,6 +5,7 @@ en:
         created_at: 'Created at'
         updated_at: 'Updated at'
       apartment:
+        <<: *timestamps
         description: 'Description'
         number_street: 'Number of street'
         price: 'Price'
@@ -12,15 +13,24 @@ en:
         surface: 'Surface'
         title: 'Title'
         town: 'Town'
+      document:
+        <<: *timestamps
+        content: 'Content'
+        description: 'Description'
+        important: 'Important'
+        title: 'Title'
+        user: 'User'
       photo:
+        <<: *timestamps
+        apartment: 'Apartment'
         apartment_id: 'Apartment ID'
         description: 'Description'
         photo_path: 'Photo'
         title: 'Title'
       user:
+        <<: *timestamps
         apartment_id: 'Apartment ID'
         email: 'Email'
-        entry_date: 'Entry date'
         firstname: 'Firstname'
         lastname: 'Lastname'
         number_street: 'Number of street'
@@ -29,3 +39,7 @@ en:
         street: 'Street'
         town: 'Town'
         type: 'Type'
+      users/tenant:
+        apartment: 'Apartment'
+        entry_date: "Entry Date"
+        release_date: "Release Date"

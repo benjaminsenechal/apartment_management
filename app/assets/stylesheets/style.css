@@ -1,0 +1,12 @@
+.signout-button {
+  float: right;
+  padding: 20px;
+}
+
+.header-documents {
+  height: 100px;
+}
+
+.header-documents h1 {
+  float: left;
+}

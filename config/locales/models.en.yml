@@ -4,6 +4,9 @@ en:
       apartment:
         one: 'Apartment'
         other: 'Apartments'
+      document:
+        one: 'Document'
+        other: 'Documents'
       photo:
         one: 'Photo'
         other: 'Photos'

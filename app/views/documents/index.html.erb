@@ -1,0 +1,42 @@
+<div class="header-documents">
+  <h1>Mon compte</h1>
+  <span class="signout-button"><%= link_to 'Se déconnecter', destroy_user_session_path, method: :delete %></span>
+</div>
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span3">
+      <div class="well sidebar-nav">
+        <ul class="nav nav-list">
+          <li class="nav-header">Menu</li>
+          <li><%= link_to 'Mes documents', documents_path %></li>
+          <li><%= link_to 'Envoyer un document', new_document_path %></li>
+        </ul>
+      </div>
+    </div>
+    <div class="span9">
+      <h1>Mes documents</h1>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Titre</th>
+            <th>Description</th>
+            <th>Important</th>
+            <th>Date</th>
+            <th>Télécharger</th>
+          </tr>
+        </thead>
+        <tbody>
+          <% @documents.each do |d| %>
+            <tr>
+              <td><%= d.title %></td>
+              <td><%= d.description %></td>
+              <td><%= d.important %></td>
+              <td><%= d.created_at %></td>
+              <td><a href="<%= d.content %>">Télécharger</a></td>
+            </tr>
+          <% end %>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
